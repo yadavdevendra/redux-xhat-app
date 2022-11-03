@@ -68,7 +68,7 @@
 .message-box-right {
   flex-direction: row-reverse;
   margin-left: 7rem;
-  border-radius: 10px 0px 10px 10px/0px 10px 10px 10px;
+  border-radius: 0px 10px 10px 10px;
   border: 2px solid rgb(81, 175, 230);
   background-color: #25D366;
   margin-top: 10px;
