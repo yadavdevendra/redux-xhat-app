@@ -1,1 +1,1 @@
-# redux-xhat-app
+# redux-chat-app
