@@ -1,4 +1,4 @@
-import { Avatar, Icon, TextField } from "@shopify/polaris";
+import { Avatar, Icon, Image, TextField } from "@shopify/polaris";
 import React, { useEffect, useState } from "react";
 import { SendMajor } from "@shopify/polaris-icons";
 import { useDispatch, useSelector } from "react-redux";
@@ -42,11 +42,11 @@ const ChatBox = ({ user }) => {
         backgroundColor: "#128C7E",
         justifyContent: "space-between"
       }}>
-        <div>
-          <Avatar />
+        <div tyle={{ margin: "20px" }}>
+          <Avatar source="chat.png"  />
         </div>
 
-        <div style={{ margin: "10px" }}> {user.slice(0,8)}
+        <div style={{ margin: "10px" }}> {user.slice(0, 8)}
         </div>
         <div style={{ margin: "10px" }}>
           <Icon
@@ -63,7 +63,7 @@ const ChatBox = ({ user }) => {
               className={`message-box ${chat.user === user ? "message-box-right" : "message-box-left"
                 }`}
             >
-              <div className="username">{chat.user.slice(0,8)}</div>
+              <div className="username">{chat.user.slice(0, 8)}</div>
               <div className="message-text">{chat.message}</div>
             </div>
           );
