@@ -46,7 +46,7 @@ const ChatBox = ({ user }) => {
           <Avatar />
         </div>
 
-        <div style={{ margin: "10px" }}> {user}
+        <div style={{ margin: "10px" }}> {user.slice(0,8)}
         </div>
         <div style={{ margin: "10px" }}>
           <Icon
@@ -63,7 +63,7 @@ const ChatBox = ({ user }) => {
               className={`message-box ${chat.user === user ? "message-box-right" : "message-box-left"
                 }`}
             >
-              <div className="username">{chat.user}</div>
+              <div className="username">{chat.user.slice(0,8)}</div>
               <div className="message-text">{chat.message}</div>
             </div>
           );
