@@ -4,6 +4,8 @@ import { SendMajor } from "@shopify/polaris-icons";
 import { useDispatch, useSelector } from "react-redux";
 import { POST_DATA, SET_CHAT } from "../../redux/action/actiontype";
 import { SmileyHappyMajor } from '@shopify/polaris-icons';
+import { MobileVerticalDotsMajor } from '@shopify/polaris-icons';
+import { CameraMajor } from '@shopify/polaris-icons';
 
 const ChatBox = ({ user }) => {
   const dispatch = useDispatch();
@@ -38,11 +40,19 @@ const ChatBox = ({ user }) => {
         borderRadius: "10px",
         display: "flex",
         backgroundColor: "#128C7E",
-        textAlign: "center"
+        justifyContent: "space-between"
       }}>
-        <div style={{ width: 444, height: 44, display: "flex" }}>
+        <div>
           <Avatar />
-          <h1 style={{ marginTop: "12px", marginLeft: "10px", fontSize: "25px", fontWeight: "bold" }}>{user}</h1>
+        </div>
+
+        <div style={{ margin: "10px" }}> {user}
+        </div>
+        <div style={{ margin: "10px" }}>
+          <Icon
+            source={MobileVerticalDotsMajor}
+            color="base"
+          />
         </div>
       </div>
       <div className="childchat">
@@ -71,7 +81,7 @@ const ChatBox = ({ user }) => {
           <SendMajor />
         </button> 
       </form>*/}
-      <form class="conversation-compose" onSubmit={handleckick}>
+      <form className="conversation-compose" onSubmit={handleckick}>
         <div className="emoji">
           <Icon
             source={SmileyHappyMajor}
@@ -79,19 +89,21 @@ const ChatBox = ({ user }) => {
           />
         </div>
         <input
-          class="input-msg"
+          className="input-msg"
           name="input"
           placeholder="Type a message"
-          autocomplete="off"
           value={setchatText}
           onChange={(e) => setChatText(e.target.value)}
-          autofocus />
-        <div class="photo">
-          <i class="zmdi zmdi-camera"></i>
+        />
+        <div className="photo">
+          <Icon
+            source={CameraMajor}
+            color="base"
+          />
         </div>
         <button className="icon">
           <Icon
-            source={SendMajor }
+            source={SendMajor}
             color="base"
           />
         </button>
