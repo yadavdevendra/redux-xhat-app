@@ -43,7 +43,7 @@ const ChatBox = ({ user }) => {
         justifyContent: "space-between"
       }}>
         <div tyle={{ margin: "20px" }}>
-          <Avatar source="chat.png"  />
+          <Avatar source="https://s3.ap-south-1.amazonaws.com/assets.ynos.in/startup-logos/YNOS340615.png"  />
         </div>
 
         <div style={{ margin: "10px" }}> {user.slice(0, 8)}
