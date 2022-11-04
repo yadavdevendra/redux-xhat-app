@@ -43,7 +43,7 @@ const ChatBox = ({ user }) => {
         justifyContent: "space-between"
       }}>
         <div tyle={{ margin: "20px" }}>
-          <Avatar source="https://s3.ap-south-1.amazonaws.com/assets.ynos.in/startup-logos/YNOS340615.png"  />
+          <Avatar source="https://s3.ap-south-1.amazonaws.com/assets.ynos.in/startup-logos/YNOS340615.png" />
         </div>
 
         <div style={{ margin: "10px" }}> {user.slice(0, 8)}
@@ -88,13 +88,15 @@ const ChatBox = ({ user }) => {
             color="base"
           />
         </div>
+        {/* <div className="input-msg"> */}
         <input
           className="input-msg"
-          name="input"
+          type="text"
           placeholder="Type a message"
           value={setchatText}
           onChange={(e) => setChatText(e.target.value)}
         />
+        {/* </div> */}
         <div className="photo">
           <Icon
             source={CameraMajor}

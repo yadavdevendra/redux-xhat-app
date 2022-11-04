@@ -71,7 +71,7 @@
 .message-box-left {
   margin-right: 7rem;
   height: max-content;
-  border-radius: 10px 0px 10px 10px;
+  border-radius: 0px 10px 10px 10px;
   border: 2px solid rgb(107, 103, 103);
   background-color: white;
   color: black;
@@ -82,18 +82,20 @@
 .message-box-right {
   flex-direction: row-reverse;
   margin-left: 7rem;
-  border-radius: 0px 10px 10px 10px;
+  border-radius: 10px 0px 10px 10px;
   border: 2px solid rgb(81, 175, 230);
   position: relative;
-  background-color: #25D366;
+  background-color: #25d366;
   margin-top: 10px;
   font-size: small;
 }
 
 .icon {
   margin-top: 40px;
-  height: 50px;
-  width: 70px;
+  height: 40px;
+  border-radius: 100%;
+  width: 50px;
+  background-color:#0d8b5bf6
 
 }
 
@@ -128,9 +130,8 @@
 }
 
 .conversation-compose .input-msg {
-  margin-top: -10px;
-  border: 0;
-  flex: 1 1 auto;
+  border: none;
+  /* flex: 1 1 auto; */
   font-size: 16px;
   outline: none;
   min-width: 50px;
@@ -157,9 +158,9 @@
 
 
 
-/* Small Screens
+/* Small Screens */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .marvel-device.nexus5 {
     border-radius: 0;
     flex: none;
