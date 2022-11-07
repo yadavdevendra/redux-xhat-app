@@ -69,25 +69,47 @@
 }
 
 .message-box-left {
+  flex-direction: row-reverse;
   margin-right: 7rem;
-  height: max-content;
-  border-radius: 0px 10px 10px 10px;
-  border: 2px solid rgb(107, 103, 103);
-  background-color: white;
-  color: black;
-  font-size: small;
+  position: reative;
+  background-color: whitesmoke;
   margin-top: 10px;
+  margin-left: 10px;
+  font-size: small;
+  border-radius: 0px 10px 10px 10px;
+}
+.message-box-left::after {
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fff transparent transparent;
+  border-style: solid;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "dev";
+  top: 0;
+  left: 10px;
 }
 
 .message-box-right {
   flex-direction: row-reverse;
   margin-left: 7rem;
-  border-radius: 10px 0px 10px 10px;
-  border: 2px solid rgb(81, 175, 230);
   position: relative;
-  background-color: #25d366;
+  background-color: #e1ffc7;
   margin-top: 10px;
+  margin-right: 10px;
   font-size: small;
+  border-radius: 10px 0px 10px 10px;
+}
+.message-box-right::after {
+  border-width: 0px 0 10px 10px;
+  border-color: transparent transparent transparent #e1ffc7;
+  border-style: solid;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+  top: 0;
+  right: -10px;
 }
 
 .icon {
