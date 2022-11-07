@@ -67,30 +67,32 @@
   font-size: 0.9rem;
 
 }
-
 .message-box-left {
+  box-shadow: 1px 0.9px 3px 0px grey;
   flex-direction: row-reverse;
   margin-right: 7rem;
-  position: reative;
-  background-color: whitesmoke;
+  position:relative;
+  background-color: white;
   margin-top: 10px;
   margin-left: 10px;
   font-size: small;
   border-radius: 0px 10px 10px 10px;
 }
-.message-box-left::after {
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #fff transparent transparent;
+.message-box-left::before {
+  border-width: 0px 0 10px 10px;
+  border-color: transparent transparent transparent white;
   border-style: solid;
   position: absolute;
   width: 0;
   height: 0;
-  content: "dev";
+  content: "";
   top: 0;
-  left: 10px;
+  left: -5px;
 }
 
+
 .message-box-right {
+  box-shadow: 1px 0.9px 3px 0px grey;
   flex-direction: row-reverse;
   margin-left: 7rem;
   position: relative;
@@ -115,7 +117,7 @@
 .icon {
   margin-top: 40px;
   height: 40px;
-  border-radius: 100%;
+  border-radius: 50%;
   width: 50px;
   background-color:#0d8b5bf6
 
@@ -153,7 +155,7 @@
 
 .conversation-compose .input-msg {
   border: none;
-  /* flex: 1 1 auto; */
+  flex: 1 1 auto;
   font-size: 16px;
   outline: none;
   min-width: 50px;
@@ -163,7 +165,8 @@
   flex: 0 0 auto;
   display: flex;
   position: relative;
-  width: 48px;
+  margin-right: 8px;
+  width: 28px;
 }
 
 .conversation-compose .photo:after {
