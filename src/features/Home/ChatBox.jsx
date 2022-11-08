@@ -51,7 +51,7 @@ const ChatBox = ({ user }) => {
         <div style={{ margin: "10px" }}>
           <Icon
             source={MobileVerticalDotsMajor}
-            color="base"
+            color="subdued"
           />
         </div>
       </div>
@@ -85,7 +85,7 @@ const ChatBox = ({ user }) => {
         <div className="emoji">
           <Icon
             source={SmileyHappyMajor}
-            color="base"
+            color="subdued"
           />
         </div>
         {/* <div className="input-msg"> */}
@@ -100,13 +100,13 @@ const ChatBox = ({ user }) => {
         <div className="photo">
           <Icon
             source={CameraMajor}
-            color="base"
+            color="subdued"
           />
         </div>
         <button className="icon">
           <Icon
             source={SendMajor}
-            color="base"
+            color="subdued"
           />
         </button>
       </form>

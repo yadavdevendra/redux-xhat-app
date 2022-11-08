@@ -70,27 +70,26 @@
 .message-box-left {
   box-shadow: 1px 0.9px 3px 0px grey;
   flex-direction: row-reverse;
-  margin-right: 7rem;
-  position:relative;
+  margin-right: 5rem;
+  position: relative;
   background-color: white;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 11px;
   font-size: small;
   border-radius: 0px 10px 10px 10px;
 }
 .message-box-left::before {
-  border-width: 0px 0 10px 10px;
+  border-width: 11px 5px 0px 18px;
   border-color: transparent transparent transparent white;
   border-style: solid;
   position: absolute;
+  rotate: -177deg;
   width: 0;
   height: 0;
   content: "";
   top: 0;
-  left: -5px;
+  left: -18px;
 }
-
-
 .message-box-right {
   box-shadow: 1px 0.9px 3px 0px grey;
   flex-direction: row-reverse;
